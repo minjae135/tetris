@@ -25,6 +25,25 @@ startBtn.addEventListener('click', () => {
     game.start();
 });
 
+// Modal Logic
+const infoBtn = document.getElementById('info-btn')!;
+const infoModal = document.getElementById('info-modal')!;
+const closeBtn = document.querySelector('.close-btn')!;
+
+infoBtn.addEventListener('click', () => {
+    infoModal.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+    infoModal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === infoModal) {
+        infoModal.style.display = 'none';
+    }
+});
+
 document.addEventListener('keydown', (event) => {
     game.handleKey(event);
 });

@@ -1,3 +1,4 @@
+// src/game.ts
 import { COLS, KEY } from './constants.js';
 import { Piece } from './piece.js';
 export class Game {

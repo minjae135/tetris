@@ -1,3 +1,4 @@
+// src/board.ts
 import { COLS, ROWS, BLOCK_SIZE, COLORS } from './constants.js';
 export class Board {
     constructor(ctx) {

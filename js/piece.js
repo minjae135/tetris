@@ -1,3 +1,4 @@
+// src/piece.ts
 import { SHAPES, COLORS, WALL_KICK } from './constants.js';
 export class Piece {
     constructor(type) {

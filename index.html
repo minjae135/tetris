@@ -31,8 +31,26 @@
                 <div id="score">0</div>
             </div>
             <button id="start-btn">START</button>
+            <button id="info-btn">HOW TO PLAY</button>
         </div>
     </div>
+
+    <!-- 도움말 모달 -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>🎮 HOW TO PLAY</h2>
+            <table class="info-table">
+                <tr><td><strong>← / →</strong></td><td>왼쪽 / 오른쪽 이동</td></tr>
+                <tr><td><strong>↓</strong></td><td>소프트 드롭 (빨리 내리기)</td></tr>
+                <tr><td><strong>↑ / X</strong></td><td>시계 방향 회전</td></tr>
+                <tr><td><strong>Z</strong></td><td>반시계 방향 회전</td></tr>
+                <tr><td><strong>Space</strong></td><td>하드 드롭 (즉시 내리기)</td></tr>
+            </table>
+            <p>10줄을 지울 때마다 레벨이 올라가며<br>속도가 더 빨라집니다!</p>
+        </div>
+    </div>
+
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
