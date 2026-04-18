@@ -120,6 +120,12 @@ export class Game {
     handleKey(event: KeyboardEvent) {
         if (this.gameOver || !this.activePiece) return;
 
+        // Prevent default browser behavior for game keys
+        const gameKeys = [KEY.LEFT, KEY.RIGHT, KEY.DOWN, KEY.UP, KEY.SPACE, KEY.ROTATE_CW, KEY.ROTATE_CCW];
+        if (gameKeys.includes(event.key)) {
+            event.preventDefault();
+        }
+
         const p = this.activePiece.clone();
 
         switch (event.key) {

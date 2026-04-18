@@ -15,6 +15,7 @@ const board = new Board(ctx);
 const game = new Game(board, nextCtx);
 const startBtn = document.getElementById('start-btn');
 startBtn.addEventListener('click', () => {
+    startBtn.blur();
     game.start();
 });
 // Modal Logic

@@ -22,6 +22,7 @@ const game = new Game(board, nextCtx);
 
 const startBtn = document.getElementById('start-btn')!;
 startBtn.addEventListener('click', () => {
+    (startBtn as HTMLElement).blur();
     game.start();
 });
 
